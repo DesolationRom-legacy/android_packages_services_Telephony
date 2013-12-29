@@ -15,6 +15,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
     <!-- Advanced Settings -->
     <string name="advanced_setting">Advanced Settings</string>
     <string name="show_ssn_label">Event notification</string>
@@ -72,4 +73,31 @@
     <string name="call_notif_callconnectingect">Call connecting through explicit call transfer</string>
     <!-- Toast text for incoming call connected through ECT -->
     <string name="call_notif_callconnectedect">Call connected through explicit call transfer</string>
+
+    <!-- Manual PLMN scan data disconnect dialog text -->
+    <string name="disconnect_data_confirm">Data service needs to be disconnected temporarily. Are you sure you want to continue?</string>
+
+    <!-- IMS settings related strings -->
+    <!-- Title of the ims editor screen. [CHAR LIMIT=NONE] -->
+    <string name="ims_edit_title">IMS account details</string>
+    <!-- Title displayed IMS account settings in the sip settings category. [CHAR LIMIT=NONE] -->
+    <string name="ims_accounts_title">IMS accounts</string>
+
+    <!-- VT call quality settings. -->
+    <string translatable="false" name="ims_vt_call_quality">VtCallQuality</string>
+    <string name="ims_vt_call_quality_title">Video call quality</string>
+    <string name="ims_vt_call_quality_low">Low</string>
+    <string name="ims_vt_call_quality_high">High</string>
+    <string name="ims_vt_call_quality_unknown">Unknown</string>
+    <string name="ims_vt_call_quality_set_failed">Failed to set video quality</string>
+
+    <!-- Permission for notification-bar network toggle -->
+    <string name="perm_change_mobile_network">change network mode (2G/3G)</string>
+    <string name="perm_change_mobile_network_desc">Allows the app to change between 2G data and 3G data at any time. 3G is faster, but consumes more battery and may cause additional cost.</string>
+
+    <!-- My Phone Number -->
+    <string name="phone_number_label">My phone number</string>
+    <string name="phone_number_summary">Set the phone number for this device</string>
+    <string name="msisdn_alpha_tag" translatable="false">Voice Line 1</string>
+
 </resources>
