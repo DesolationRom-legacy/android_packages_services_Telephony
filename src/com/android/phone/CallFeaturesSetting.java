@@ -60,7 +60,6 @@ import com.android.internal.telephony.CallForwardInfo;
 import com.android.internal.telephony.CommandsInterface;
 import com.android.internal.telephony.Phone;
 import com.android.internal.telephony.PhoneConstants;
-import com.android.internal.telephony.util.BlacklistUtils;
 import com.android.phone.common.util.SettingsUtil;
 import com.android.phone.msim.SelectSubscription;
 import com.android.phone.settings.AccountSelectionPreference;
