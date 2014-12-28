@@ -144,6 +144,7 @@ public class GsmUmtsOptions {
                 mPrefScreen.removePreference(mButtonOperatorSelectionExpand);
             }
         }
+
         // Read platform settings for carrier settings
         final boolean isCarrierSettingsEnabled = mPrefActivity.getResources().getBoolean(
                 R.bool.config_carrier_settings_enable);
@@ -153,6 +154,7 @@ public class GsmUmtsOptions {
                 mPrefScreen.removePreference(pref);
             }
         }
+
         if (!mRemovedAPNExpand) {
             mButtonAPNExpand.setOnPreferenceClickListener(
                     new Preference.OnPreferenceClickListener() {
