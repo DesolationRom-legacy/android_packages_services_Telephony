@@ -1607,6 +1607,9 @@ public class CallFeaturesSetting extends PreferenceActivity
         } else {
             addPreferencesFromResource(R.xml.call_feature_setting);
         }
+        if (isVTSupported()) {
+            addPreferencesFromResource(R.xml.video_call_settings);
+        }
         initPhoneAccountPreferences();
 
         // get buttons
