@@ -463,11 +463,11 @@
             </intent-filter>
         </activity>
 
-        <!-- Select Subscription -->
+        <!-- Select Subscription. Theme is set in the Activity. -->
         <activity android:name=".msim.SelectSubscription"
             android:label="@string/callind_multi_sim"
             android:configChanges="orientation|keyboardHidden"
-            android:theme="@style/SettingsLight">
+            >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
