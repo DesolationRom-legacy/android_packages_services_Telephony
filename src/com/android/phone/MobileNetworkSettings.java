@@ -467,10 +467,6 @@ public class MobileNetworkSettings extends PreferenceActivity
 
                 //Set the modem network mode
                 setPreferredNetworkType(modemNetworkMode);
-
-                Intent intent = new Intent(PhoneToggler.ACTION_NETWORK_MODE_CHANGED);
-                intent.putExtra(PhoneToggler.EXTRA_NETWORK_MODE, buttonNetworkMode);
-                mPhone.getContext().sendBroadcast(intent, PhoneToggler.CHANGE_NETWORK_MODE_PERM);
             }
         } else if (preference == mButtonEnabledNetworks) {
             mButtonEnabledNetworks.setValue((String) objValue);
@@ -501,10 +497,6 @@ public class MobileNetworkSettings extends PreferenceActivity
 
                 //Set the modem network mode
                 setPreferredNetworkType(modemNetworkMode);
-
-                Intent intent = new Intent(PhoneToggler.ACTION_NETWORK_MODE_CHANGED);
-                intent.putExtra(PhoneToggler.EXTRA_NETWORK_MODE, buttonNetworkMode);
-                mPhone.getContext().sendBroadcast(intent, PhoneToggler.CHANGE_NETWORK_MODE_PERM);
             }
         } else if (preference == mButton4glte) {
             SwitchPreference ltePref = (SwitchPreference)preference;
@@ -690,18 +682,10 @@ public class MobileNetworkSettings extends PreferenceActivity
                     networkMode = Integer.valueOf(
                             mButtonPreferredNetworkMode.getValue()).intValue();
                     setPreferredNetworkSetting(networkMode);
-
-                    Intent intent = new Intent(PhoneToggler.ACTION_NETWORK_MODE_CHANGED);
-                    intent.putExtra(PhoneToggler.EXTRA_NETWORK_MODE, networkMode);
-                    mPhone.getContext().sendBroadcast(intent, PhoneToggler.CHANGE_NETWORK_MODE_PERM);
                 } else if (mButtonEnabledNetworks != null) {
                     networkMode = Integer.valueOf(
                             mButtonEnabledNetworks.getValue()).intValue();
                     setPreferredNetworkSetting(networkMode);
-
-                    Intent intent = new Intent(PhoneToggler.ACTION_NETWORK_MODE_CHANGED);
-                    intent.putExtra(PhoneToggler.EXTRA_NETWORK_MODE, networkMode);
-                    mPhone.getContext().sendBroadcast(intent, PhoneToggler.CHANGE_NETWORK_MODE_PERM);
                 }
             } else {
                 mPhone.getPreferredNetworkType(obtainMessage(MESSAGE_GET_PREFERRED_NETWORK_TYPE));
