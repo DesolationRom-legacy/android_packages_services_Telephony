@@ -100,4 +100,9 @@
     <string name="phone_number_summary">Set the phone number for this device</string>
     <string name="msisdn_alpha_tag" translatable="false">Voice Line 1</string>
 
+    <!-- SIM Card Information -->
+    <string name="sim_info">SIM card info</string>
+    <string name="close">Close</string>
+    <string name="change">Set</string>
+
 </resources>
