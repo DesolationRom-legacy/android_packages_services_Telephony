@@ -21,6 +21,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -1743,8 +1744,6 @@ public class CallFeaturesSetting extends PreferenceActivity
             }
         }
 
-        if (!getResources().getBoolean(R.bool.world_phone) && (!isMsim)) {
-
         final ContentResolver contentResolver = getContentResolver();
 
         if (mProxSpeaker != null) {
@@ -2239,7 +2238,6 @@ public class CallFeaturesSetting extends PreferenceActivity
     private boolean isVTSupported() {
         return SystemProperties.getBoolean("persist.radio.csvt.enabled", false);
     }
-
 
     /**
      * Deletes settings for the specified provider.
