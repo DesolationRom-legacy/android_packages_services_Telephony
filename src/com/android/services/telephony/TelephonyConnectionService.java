@@ -424,7 +424,6 @@ public class TelephonyConnectionService extends ConnectionService {
 
     }
 
-    @Override
     public void onAddParticipant(Connection connection, String participant) {
         if (connection instanceof TelephonyConnection) {
             ((TelephonyConnection) connection).performAddParticipant(participant);
